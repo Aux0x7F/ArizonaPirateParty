@@ -317,10 +317,21 @@ a:focus-visible {
   margin: 0;
 }
 
-.cta-card .site-button,
+.cta-card > .site-button,
 .candidate-card .site-button {
   align-self: flex-start;
   margin-top: auto;
+}
+
+.cta-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
+}
+
+.cta-card__actions .site-button {
+  margin-top: 0;
 }
 
 /* COMPONENT: long-form page panels. */
@@ -391,6 +402,90 @@ a:focus-visible {
 .candidate-list {
   display: grid;
   gap: 1rem;
+}
+
+/* COMPONENT: merch product cards. */
+.merch-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 58rem;
+}
+
+.merch-card {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(204, 232, 255, 0.78) 46%, rgba(255, 115, 29, 0.18)),
+    rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(7px) saturate(1.18);
+  border: 2px solid rgba(255, 255, 255, 0.64);
+  border-radius: 8px;
+  box-shadow: var(--shadow-panel);
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 0.9rem;
+  position: relative;
+}
+
+.merch-card::before {
+  background: linear-gradient(90deg, var(--color-pirate-orange), var(--color-pirate-red), var(--color-pirate-green));
+  content: "";
+  height: 0.32rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.merch-card__media {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(23, 32, 51, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.merch-card__media img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.merch-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.merch-card__body h2 {
+  color: var(--color-pirate-green);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.merch-card__body p {
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.merch-card__body .site-button {
+  align-self: flex-start;
+}
+
+.merch-card__price {
+  color: var(--color-pirate-red);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.merch-card__note {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 /* COMPONENT: officer and county role lists. */
@@ -518,6 +613,12 @@ a:focus-visible {
 
   .role-list li {
     grid-template-columns: minmax(13rem, 0.75fr) 1fr;
+  }
+
+  .merch-card {
+    align-items: center;
+    grid-template-columns: minmax(14rem, 0.85fr) 1fr;
+    padding: 1.1rem;
   }
 
   .site-footer__inner {

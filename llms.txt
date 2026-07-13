@@ -4,10 +4,11 @@
 
 ## Core pages
 
-- [Home](https://azpirateparty.org/): Arizona Pirate Party overview with calls to join Discord, donate, and become a member.
+- [Home](https://azpirateparty.org/): Arizona Pirate Party overview with calls to join Discord, support the party, and become a member.
 - [Platform](https://azpirateparty.org/platform.html): Long-form platform covering privacy, transparency, civil liberties, healthcare, education, and reform positions.
 - [Join](https://azpirateparty.org/join.html): Membership signup form and organizer contact paths.
 - [Donate](https://azpirateparty.org/donate.html): Donation link and donor transparency requirements.
+- [Merch](https://azpirateparty.org/merch.html): Arizona Pirate Party merch with Stripe checkout.
 - [Candidates](https://azpirateparty.org/candidates.html): 2026 candidate information.
 - [About](https://azpirateparty.org/about.html): Council, officer, and county captain roles.
 
